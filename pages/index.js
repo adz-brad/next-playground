@@ -19,11 +19,11 @@ const Home = () => {
     const res = await fetch(endpoint, options)
     if(res.status === 200){
       // Add action for successful form submission or remove
-      console.log('Browser: Form Submitted')
+      console.log('Browser Response Success:', res)
     }
     else {
       // Add action for form submission error or remove
-      console.log('Browser: Error with form submission')
+      console.log('Browser Response Error:', res)
     }
   }
 
